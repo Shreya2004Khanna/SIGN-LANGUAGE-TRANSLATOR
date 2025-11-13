@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Sign Language Translator</h1>
+<h2 class="subtitle">Live hand skeleton, instant prediction, and speech controls</h2>
+
+<div class="container">
+    <div class="left card">
+        <img id="cameraFeed" src="/video_feed" alt="Live camera stream">
+    </div>
+
+    <div class="right card">
+        <div class="heading">
+            <h3>Prediction Result</h3>
+            <div style="display:flex;align-items:center;gap:10px;">
+                <div class="muted">Realtime • Grammar-corrected</div>
+                <button id="themeToggle" class="btn-ghost" title="Toggle theme">Dark</button>
+            </div>
+        </div>
+
+        <textarea id="predictionBox" readonly>Waiting...</textarea>
+
+        <div class="controls">
+            <button id="clearBtn" class="btn-ghost">Clear</button>
+            <button id="playPauseBtn" class="btn-primary">Play</button>
+            <button id="stopBtn" class="btn-danger">Stop</button>
+        </div>
+    </div>
+</div>
+
+<footer>Tip: Only one process can access the camera. Stop other scripts (like <code>main.py</code>) before running this app.</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
