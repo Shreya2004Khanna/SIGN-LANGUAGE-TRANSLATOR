@@ -1,45 +1,43 @@
-Sign Language Translator – README
-Overview
+Sign Language Translator
 
-A simple Sign Language Translator that uses a webcam to capture hand gestures and converts them into text using a trained machine learning model.
+A simple project that captures hand gestures through a webcam and translates them into text using a machine learning model.
 
-Features
+📌 Features
 
-Real-time hand gesture capture
+Real-time sign detection
 
-ML model prediction (scikit-learn)
+Converts gestures to text
 
-Converts signs to text
+ML model trained using scikit-learn
 
-Simple Flask backend + HTML/JS frontend
+Easy-to-use web interface (HTML + JS)
 
-Tech Stack
+Flask backend for predictions
 
-Python, Flask – Backend API
+🛠️ Technology Stack
 
-OpenCV – Image capture & preprocessing
+Python (Flask) – Backend
 
-scikit-learn – Gesture recognition model
+OpenCV – Image processing
 
-HTML, CSS, JavaScript – Frontend UI
+scikit-learn – ML model
 
-How to Run
+HTML, CSS, JavaScript – Frontend
 
-Install requirements:
+📂 Project Structure
+/model        → trained_model.pkl
+/static       → script.js, styles.css
+/templates    → index.html
+app.py
+README.md
+
+▶ How to Run
+
+Install dependencies
 
 pip install -r requirements.txt
 
 
-Start server:
+Start backend
 
 python app.py
-
-
-Open in browser:
-http://127.0.0.1:5000
-
-Project Structure
-model/ (saved ML model)
-static/ (JS + CSS)
-templates/ (HTML)
-app.py
